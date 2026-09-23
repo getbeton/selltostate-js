@@ -1,0 +1,10 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>Sell to State URL shape</title>
+<p>Do not put an API key in page source.</p>
+<pre id="url"></pre>
+<script>
+  const url = new URL("https://app.selltostate.com/api/v1/awards");
+  url.searchParams.set("q", "bridges");
+  document.getElementById("url").textContent = url.toString();
+</script>
